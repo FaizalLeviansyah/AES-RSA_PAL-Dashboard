@@ -88,7 +88,7 @@ $data = mysqli_fetch_array($query);
         <div class="left-sidebar-pro">
             <nav id="sidebar" class="">
                 <div class="sidebar-header">
-                    <a href="index.html"><img class="main-logo" src="img/logo/logosn.png" alt="" /></a>
+                    <a href="index.html"><img class="main-logo" src="img/logo/palw.png" alt="" /></a>
                     <strong><img src="img/logo/logos.png" alt=""></strong>
                 </div>
                 <div class="nalika-profile">
