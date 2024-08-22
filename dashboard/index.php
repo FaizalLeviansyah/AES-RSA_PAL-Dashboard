@@ -19,7 +19,7 @@ $data = mysqli_fetch_array($query);
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>File Enkripsi & Dekripsi AES</title>
+    <title>File Enkripsi & Dekripsi RSA</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- favicon
@@ -264,7 +264,7 @@ $data = mysqli_fetch_array($query);
                           <td><?php echo $data['file_size']; ?> KB</td>
                           <td><?php echo $data['tgl_upload']; ?></td>
                           <td><?php if ($data['status'] == 1) {
-                            echo "<a href='download.php?file=" . urlencode($data['file_url']) . "' class='btn btn-danger'>Terenkripsi</a>";
+                            echo "<a href='download.php?file=" . urlencode($data['file_url']) . "' class='btn btn-danger'>Unduh file enkripsi</a>";
                           }elseif ($data['status'] == 2) {
                             echo "<span class='btn btn-success'>Sudah Didekripsi</span>";
                           }else {
