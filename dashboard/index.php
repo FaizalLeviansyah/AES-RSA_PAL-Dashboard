@@ -264,7 +264,7 @@ $data = mysqli_fetch_array($query);
                           <td><?php echo $data['file_size']; ?> KB</td>
                           <td><?php echo $data['tgl_upload']; ?></td>
                           <td><?php if ($data['status'] == 1) {
-                            echo "<span class='btn btn-danger'>Terenkripsi</span>";
+                            echo "<a href='download.php?file=" . urlencode($data['file_url']) . "' class='btn btn-danger'>Terenkripsi</a>";
                           }elseif ($data['status'] == 2) {
                             echo "<span class='btn btn-success'>Sudah Didekripsi</span>";
                           }else {
